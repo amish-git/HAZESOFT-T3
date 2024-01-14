@@ -10,6 +10,8 @@ src_dir="$1"
 # timestamp for backup
 current_timestamp=$(date "+%Y-%M-%d-%H:%M:%S")
 echo $current_timestamp
+
+#naming the backup file.
 backup_filename="backup_${current_timestamp}.tar.gz"
 echo $backup_filename
 
@@ -17,7 +19,7 @@ echo $backup_filename
 echo "Enter the path where you want to save your backup:"
 read backup_dir 
 
-# create backup archive
+# create backup archive using gunzip
 tar -czf "${backup_dir}/${backup_filename}" "${src_dir}"
 
 # checking status of backup

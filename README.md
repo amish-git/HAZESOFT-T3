@@ -1,0 +1,5 @@
+- Here, I have created a simple backup script which can be used to backup files.
+- We take a single argument of the source folder as we run the script that needs to be back up.
+- We can use different compresion mechanism such as gzip,bzip,xz.But in my script, I have used the gzip mechanism.
+- To run the script file, you have to provide the source file to be backed up and the location where you want to back up this source file.
+- Then you will be informed if the backup has been successful or not in the promt.
